@@ -1,3 +1,3 @@
 # kinectParticles
 
-Kinect particle interaction created with Processing
+Kinect particle interaction, using a Microsoft Kinect v2 camera, created with Processing.
