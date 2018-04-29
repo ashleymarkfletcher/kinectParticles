@@ -27,10 +27,10 @@ PImage back;
 void setup() {
   
   //setup the screen/application size
-  size(1280, 720, P3D);
+  //size(1280, 720, P3D);
   
   //set sketch to fullscreen using the P3D renderer
-  //fullScreen(P3D);
+  fullScreen(P3D);
   
   //intitialise the particles
   setupParticles();
@@ -49,6 +49,8 @@ void setup() {
 
   //start the kinect tracking
   kinect.init();  
+  
+  //lights();
     
 }
 
@@ -59,6 +61,10 @@ void draw() {
   
   // background to image
   image(back, 0, 0, 1920, 1080);
+  
+  // lighting for 3D objects
+  //directionalLight(126, 126, 126, 0, 0, -1);
+  //ambientLight(102, 102, 102);
   
   //background images straight from kinect
   //image(kinect.getBodyTrackImage(), 0, 0, width, height);

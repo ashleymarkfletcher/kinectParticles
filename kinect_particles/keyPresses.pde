@@ -1,7 +1,7 @@
 void keyPressed() {
   switch (key) {
     case '1': {
-      
+
       numParticles += 10;
       setupParticles();
       break;

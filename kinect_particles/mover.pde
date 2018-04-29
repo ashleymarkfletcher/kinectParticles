@@ -124,6 +124,18 @@ class Mover {
 
     // draw from current location to the random x and y 
     line(location.x, location.y, location.x+randX, location.y+randY);
+
+    // box instead of line
+    //pushMatrix();
+    //  translate(location.x,  location.y, 0);
+    //  rotateX(radians(20));
+    //  rotateY(radians(10));
+    //  rotateZ(noise(tx));
+    //  fill(49, 255, 183);
+    //  noStroke();
+    //  box(30);
+    //popMatrix();
+    
   }
 
   // if mover goes off the screen, bring it back
